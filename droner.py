@@ -84,6 +84,8 @@ def main():
         print(f"Connected to {SERIAL_PORT} at {BAUD_RATE} baud.")
 
         while True:
+            #objs = detect_object() 
+            # ^^ integration removed because of inefficiencies
             send_msp_command(ser, MSP_RAW_IMU)
             #time.sleep(0.001)
 
